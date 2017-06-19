@@ -51,7 +51,7 @@ window.addEventListener('keydown', function (evt) {
 
 activate(hash ? parseInt(hash.slice(1), 10) : 0);
 
-window.addEventListener('onhashchange', function () {
+window.addEventListener('popstate', function () {
     var hash = document.location.hash;
     activate(parseInt(hash.slice(1), 10));
 })
