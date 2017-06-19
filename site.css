@@ -69,6 +69,10 @@ img {
 body {
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 #bg, #main {
     position: fixed;
@@ -180,6 +184,11 @@ p {
     width: 50%;
     top: 0px;
     bottom: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
 }

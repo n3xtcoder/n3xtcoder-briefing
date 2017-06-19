@@ -19,8 +19,11 @@ function activate (idx) {
     var bg = sections[idx].getAttribute('data-bg');
 
     body.className = theme || '';
-    body.style = bg ? 'background-image:url(' + bg + ')' : '';
-    progress.style = 'width:' + Math.floor(idx / last * 100) + '%';
+    body.style.cssText = bg ? 'background-image:url(' + bg + ')' : '';
+    progress.style.cssText = 'width:' + Math.floor(idx / last * 100) + '%';
+
+    left.style.cssText = idx === 0 ? 'display:none;' : '';
+    right.style.cssText = idx === last ? 'display:none;' : '';
 
     sections[idx].className = "active";
     active = idx;
