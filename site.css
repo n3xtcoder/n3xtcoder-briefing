@@ -251,8 +251,8 @@ dd:last-child{
 .white #progress { background-color: rgba(0,0,0,0.3); }
 .white #progress-bar { background-color: #444; }
 .mix #main { color: #fff; }
-.mix #progress { background-color: rgba(0,0,0,0.3); }
-.mix #progress-bar { background-color: #444; }
+.mix p, .mix h2 { color: #444; }
+.mix #left, .mix #right { border-color: #fff; }
 .coloured #main { color: #fff; }
 .coloured #left, .coloured #right { border-color: #fff; }
 .green #bg { background-color: #41c1b1; }
