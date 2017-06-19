@@ -250,9 +250,9 @@ dd:last-child{
 .white #main { color: #444; }
 .white #progress { background-color: rgba(0,0,0,0.3); }
 .white #progress-bar { background-color: #444; }
-.mix #main { color: #fff; }
-.mix #progress { background-color: rgba(0,0,0,0.3); }
-.mix #progress-bar { background-color: #444; }
+.mix #main { color: #444; }
+.mix h2 { color: #fff; }
+.mix #left, .mix #right { border-color: #fff; }
 .coloured #main { color: #fff; }
 .coloured #left, .coloured #right { border-color: #fff; }
 .green #bg { background-color: #41c1b1; }
