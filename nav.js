@@ -2,6 +2,7 @@
 
 // ---------- slide navigation ----------
 
+var hash = document.location.hash;
 var body = document.body;
 var left = document.getElementById('left');
 var right = document.getElementById('right');
@@ -27,6 +28,7 @@ function activate (idx) {
 
     sections[idx].className = "active";
     active = idx;
+    window.location.hash = idx;
 }
 
 function prev () {
@@ -47,7 +49,12 @@ window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 39) next();
 });
 
-activate(0);
+activate(hash ? parseInt(hash.slice(1), 10) : 0);
+
+window.addEventListener('onhashchange', function () {
+    var hash = document.location.hash;
+    activate(parseInt(hash.slice(1), 10));
+})
 
 // ---------- video navigation ----------
 
