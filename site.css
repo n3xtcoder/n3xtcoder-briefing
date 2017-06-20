@@ -195,7 +195,7 @@ p {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
 }
 .half.left {
     left: 0px;
