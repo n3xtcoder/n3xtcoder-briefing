@@ -253,7 +253,6 @@ dd:last-child{
 }
 
 
-.pink{ color: rgb(242,71,124);}
 .white { color: #444; }
 .white #progress { background-color: rgba(0,0,0,0.3); }
 .white #progress-bar { background-color: #444; }
@@ -262,12 +261,8 @@ dd:last-child{
 .mix #right { border-color: #fff; }
 .coloured { color: #fff; }
 .coloured #left, .coloured #right { border-color: #fff; }
-.green { background-color: #41c1b1; }
-.yellow { background-color: #f89724; }
-.pink  { background-color: rgb(242,71,124); }
 .grey { background-color: #333; }
 .blue  { background-color: #0c3c64;}/*#08092c*/
-.purple { background-color: #160031;}
 .transparent .bg { opacity: 0.5; }
 
 #video {
