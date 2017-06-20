@@ -210,6 +210,9 @@ p {
 .half.right.nopad {
     padding: 0px;
 }
+h2 ~ p{
+  padding-top: 0;
+}
 .content {
     width: 100%;
     max-width: 1150px;
