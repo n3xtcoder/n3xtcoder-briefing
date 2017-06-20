@@ -233,7 +233,7 @@ dt {
     padding: 0 10px 10px 20px;
     float: left;
     width: 30%;
-    color: #444;
+    color: #999;
 }
 
 dd {
@@ -250,9 +250,9 @@ dd:last-child{
 .white #main { color: #444; }
 .white #progress { background-color: rgba(0,0,0,0.3); }
 .white #progress-bar { background-color: #444; }
-.mix #main { color: #fff; }
-.mix p, .mix h2 { color: #444; }
-.mix #left, .mix #right { border-color: #fff; }
+.mix #main { color: #444; }
+.mix p, .mix h2 { color: #fff; }
+.mix #right { border-color: #fff; }
 .coloured #main { color: #fff; }
 .coloured #left, .coloured #right { border-color: #fff; }
 .green #bg { background-color: #41c1b1; }
