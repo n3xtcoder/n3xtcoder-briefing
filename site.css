@@ -215,10 +215,11 @@ p {
     max-width: 1150px;
     margin: 0 auto;
 }
-.columns{
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
+
+.float h3{
+  float:left;
+  width: 33%;
+  padding:20px;
 }
 dl {
     margin: 0;
