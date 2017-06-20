@@ -4,6 +4,7 @@
 
 var hash = document.location.hash;
 var body = document.body;
+var nav = document.getElementById('nav');
 var left = document.getElementById('left');
 var right = document.getElementById('right');
 var sections = document.getElementsByTagName('section');
@@ -13,20 +14,16 @@ var active = -1;
 
 function activate (idx) {
     if (sections[active]) {
-        sections[active].className = "";
+        sections[active].className = sections[active].className.replace(" active", "");
     }
 
-    var theme = sections[idx].getAttribute('data-theme');
-    var bg = sections[idx].getAttribute('data-bg');
-
-    body.className = theme || '';
-    body.style.cssText = bg ? 'background-image:url(' + bg + ')' : '';
     progress.style.cssText = 'width:' + Math.floor(idx / last * 100) + '%';
 
     left.style.cssText = idx === 0 ? 'display:none;' : '';
     right.style.cssText = idx === last ? 'display:none;' : '';
 
-    sections[idx].className = "active";
+    nav.className = sections[idx].className;
+    sections[idx].className = sections[idx].className + " active";
     active = idx;
     window.location.hash = idx;
 }
