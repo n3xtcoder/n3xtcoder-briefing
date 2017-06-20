@@ -189,7 +189,7 @@ p {
 }
 .half {
     z-index: 0;
-    padding: 100px;
+    padding: 80px 100px 20px 100px;
     position: fixed;
     width: 50%;
     top: 0px;
@@ -200,6 +200,7 @@ p {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
+    overflow-y: auto;
 }
 .half.left {
     left: 0px;
@@ -209,6 +210,9 @@ p {
 }
 .half.right.nopad {
     padding: 0px;
+}
+.half p:nth-child(2){
+  padding-top: 0;
 }
 .content {
     width: 100%;
