@@ -155,13 +155,6 @@ h2 {
     padding: 20px;
     line-height: 1.3em;
 }
-.centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  text-align: left;
-}
 h3 {
     font-size: 2em;
     padding: 20px;
@@ -228,30 +221,24 @@ p {
 }
 dl {
     margin: 0;
-    padding: 0;
-}
-dd:last-child{
-  padding-bottom: 20px;
+    padding: 20px;
 }
 
 dt {
     font-weight: bold;
-    padding: 0 10px 10px 20px;
-    float: left;
-    width: 30%;
+    padding: 10px 0px;
+    display: inline-block;
+    width: 49%;
     color: #999;
+    clear: left;
 }
 
 dd {
-    padding-bottom: 10px;
-    float: left;
-    width: 70%;
+    padding: 10px 0px;
+    display: inline-block;
+    width: 50%;
     margin: 0px;
 }
-dd:last-child{
-  padding-bottom: 30px;
-}
-
 
 .white { color: #444; }
 .white #progress { background-color: rgba(0,0,0,0.3); }
@@ -328,6 +315,7 @@ z-index: 99;
         padding: 20px;
     }
     #left, #right {
+        display: none;
     }
     h2 {
         font-size: 2em;
@@ -336,12 +324,37 @@ z-index: 99;
         font-size: 1.5em;
     }
     section {
+        display: block;
     }
-    .full {
-        padding: 20px;
+    #main, section {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
     }
-    .half {
+    section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .bg {
+        position: absolute;
+    }
+    .full, .half {
         padding: 20px;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
         width: 100%;
+        min-height: 500px;
+    }
+    .cta {
+        position: relative;
+        bottom: 20px;
+    }
+    #progress {
+        display: none;
     }
 }
