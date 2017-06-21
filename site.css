@@ -222,25 +222,34 @@ p {
   width: 33%;
   padding:20px;
 }
+.float div{
+  float:left;
+  width: 33%;
+  padding:20px;
+}
+
 dl {
     margin: 0;
     padding: 20px;
+    padding-top: 0;
 }
 
 dt {
     font-weight: bold;
     padding: 10px 0px;
     display: inline-block;
-    width: 49%;
+    width: 25%;
     color: #999;
     clear: left;
+    vertical-align: text-top;
 }
 
 dd {
     padding: 10px 0px;
     display: inline-block;
-    width: 50%;
+    width: 70%;
     margin: 0px;
+    vertical-align: text-top;
 }
 
 .white { color: #444; }
