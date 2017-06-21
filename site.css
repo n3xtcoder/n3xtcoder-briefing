@@ -217,15 +217,8 @@ p {
     margin: 0 auto;
 }
 
-.float h3{
-  float:left;
-  width: 33%;
-  padding:20px;
-}
-.float div{
-  float:left;
-  width: 33%;
-  padding:20px;
+.cols h3, .cols p {
+  padding: 10px;
 }
 
 dl {
@@ -322,6 +315,16 @@ z-index: 99;
     background-color: #fff;
     color: #333;
 }
+.agenda h4 {
+    padding: 0px 0px 10px 20px;
+}
+.agenda a {
+    text-decoration: underline;
+    font-size: 0.8em;
+    display: block;
+    padding: 0px 0px 20px 20px;
+}
+
 @media (max-width:768px) {
     header {
         padding: 20px;
@@ -363,5 +366,14 @@ z-index: 99;
     }
     #progress {
         display: none;
+    }
+}
+@media (min-width:768px) {
+    .cols {
+        display: flex;
+    }
+    .cols .col {
+        flex: 1;
+        padding: 0px 10px;
     }
 }
