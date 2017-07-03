@@ -163,10 +163,11 @@ h3 {
     padding: 20px;
     line-height: 1.5em;
 }
-p {
+p, cite {
     font-size: 1.5em;
     line-height: 1.2em;
     padding: 20px;
+    display: block;
 }
 .full {
     padding: 100px;
