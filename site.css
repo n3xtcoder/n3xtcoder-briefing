@@ -185,6 +185,12 @@ h3 {
     line-height: 1.5em;
 }
 
+h2, h3 {
+    background-color: rgba(12, 60, 100, 0.6);
+    margin-bottom: 40px;
+    min-width: fit-content;
+}
+
 p, cite {
     font-size: 1.5em;
     line-height: 1.2em;
