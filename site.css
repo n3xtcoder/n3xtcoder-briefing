@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
 }
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
 body {
     margin: 0;
     font: 16px/1 sans-serif;
@@ -12,41 +14,35 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-p,
-blockquote,
-figure,
-ol,
-ul {
+
+h1, h2, h3, h4, p, blockquote, figure, ol, ul {
     margin: 0;
     padding: 0;
 }
-main,
-li {
+
+main, li {
     display: block;
 }
-h1,
-h2,
-h3,
-h4 {
+
+h1, h2, h3, h4 {
     font-size: inherit;
 }
+
 strong {
     font-weight: bold;
 }
-a,
-button {
+
+a, button {
     color: inherit;
     transition: .3s;
 }
+
 a {
     text-decoration: none;
     display: block;
     padding-bottom: 20px;
 }
+
 button {
     overflow: visible;
     border: 0;
@@ -56,18 +52,22 @@ button {
     background: none;
     cursor: pointer;
 }
+
 ::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
+
 :focus {
     outline: 0;
 }
+
 img {
     max-width: 100%;
     height: auto;
     border: 0;
 }
+
 .bg {
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,6 +76,7 @@ img {
     -webkit-background-size: cover;
     background-position: center center;
 }
+
 #main, section, .bg {
     position: fixed;
     top: 0px;
@@ -84,9 +85,11 @@ img {
     bottom: 0px;
     transition: all 0.3s;
 }
+
 #main {
     z-index: 1;
 }
+
 header {
     position: fixed;
     width: 100%;
@@ -94,21 +97,27 @@ header {
     display: flex;
     padding: 50px;
 }
+
 header div {
     flex: 1;
 }
+
 header .c-left {
     text-align: left;
 }
+
 header .c-center {
     text-align: center;
 }
+
 header .c-right {
     text-align: right;
 }
+
 header .logo {
     width: 50px;
 }
+
 #left, #right {
     width: 30px;
     height: 30px;
@@ -119,23 +128,27 @@ header .logo {
     transition: border-color 0.3s;
     z-index: 100;
 }
+
 #left {
     border-left: 5px solid #444;
     transform: rotate(45deg);
     left: 50px;
 }
+
 #right {
     border-left: 5px solid #444;
     transform: rotate(-135deg);
     right: 50px;
 }
+
 #progress {
     display: inline-block;
     position: relative;
     width: 50%;
     height: 5px;
-    background: rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.5);
 }
+
 #progress-bar {
     display: inline-block;
     position: absolute;
@@ -146,37 +159,43 @@ header .logo {
     background: #fff;
     transition: all 0.5s;
 }
+
 section {
     display: none;
 }
+
 section.active {
     display: block;
 }
+
 h2 {
     font-size: 3em;
     font-weight: 500;
     padding: 20px;
     line-height: 1.3em;
 }
+
 h3 {
     font-size: 2em;
     padding: 20px;
     line-height: 1.5em;
 }
+
 p, cite {
     font-size: 1.5em;
     line-height: 1.2em;
     padding: 20px;
     display: block;
 }
+
 .full {
     padding: 100px;
     text-align: center;
     display: flex;
     -ms-flex-align: center;
-	-webkit-align-items: center;
-	-webkit-box-align: center;
-	align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
     z-index: 0;
     padding: 100px;
     position: fixed;
@@ -184,6 +203,7 @@ p, cite {
     top: 0px;
     bottom: 0px;
 }
+
 .half {
     z-index: 0;
     padding: 80px 100px 20px 100px;
@@ -199,19 +219,23 @@ p, cite {
     background-position: center center;
     /*overflow-y: auto;*/
 }
+
 .half.left {
     left: 0px;
 }
+
 .half.right {
     right: 0px;
 }
+
 .half.right.nopad {
     padding: 0px;
 }
 
-.half p:nth-child(2){
-  padding-top: 0;
+.half p:nth-child(2) {
+    padding-top: 0;
 }
+
 .content {
     width: 100%;
     max-width: 1150px;
@@ -219,7 +243,7 @@ p, cite {
 }
 
 .cols h3, .cols p {
-  padding: 10px;
+    padding: 10px;
 }
 
 dl {
@@ -246,27 +270,69 @@ dd {
     vertical-align: text-top;
 }
 
-.white { color: #444; }
-.white #progress { background-color: rgba(0,0,0,0.3); }
-.white #progress-bar { background-color: #444; }
-.mix { color: #444; }
-.mix p, .mix h2 { color: #fff; }
-.mix #right { border-color: #fff; }
-.coloured { color: #fff; }
-.coloured #left, .coloured #right { border-color: #fff; }
-.grey { background-color: #333; }
-.blue  { background-color: #0c3c64;}/*#08092c*/
-.transparent .bg { opacity: 0.5; }
+.white {
+    color: #444;
+}
+
+.white #progress {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.white #progress-bar {
+    background-color: #444;
+}
+
+.mix {
+    color: #444;
+}
+
+.mix p, .mix h2 {
+    color: #fff;
+}
+
+.mix #right {
+    border-color: #fff;
+}
+
+.coloured {
+    color: #fff;
+}
+
+.coloured #left, .coloured #right {
+    border-color: #fff;
+}
+
+.grey {
+    background-color: #333;
+}
+
+.blue {
+    background-color: #0c3c64;
+}
+
+
+/*#08092c*/
+
+.transparent .bg {
+    opacity: 0.5;
+}
+
+.location-logo {
+    height: 15%;
+    padding: 20px;
+}
 
 #video {
     display: none;
 }
+
 #video.visible {
     display: block;
 }
+
 #video-close {
     background: #000;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     width: 50px;
     height: 50px;
     color: #fff;
@@ -280,21 +346,22 @@ dd {
     text-align: center;
     cursor: pointer;
 }
+
 .video-container {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: 99;
+.video-container iframe, .video-container object, .video-container embed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
 }
 
 .cta {
@@ -303,22 +370,26 @@ z-index: 99;
     text-align: center;
     width: 100%;
 }
+
 .button {
     border: 1px solid #fff;
     padding: 10px 30px;
     display: inline-block;
     cursor: pointer;
     font-weight: bold;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     transition: all 0.3s;
 }
+
 .button:hover {
     background-color: #fff;
     color: #333;
 }
+
 .agenda h4 {
     padding: 0px 0px 10px 20px;
 }
+
 .agenda a {
     text-decoration: underline;
     font-size: 0.8em;
@@ -365,10 +436,16 @@ z-index: 99;
         position: relative;
         bottom: 30px;
     }
+    .location-logo {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+    }
     #progress {
         display: none;
     }
 }
+
 @media (min-width:768px) {
     .cols {
         display: flex;
