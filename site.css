@@ -168,6 +168,10 @@ section.active {
     display: block;
 }
 
+section:first-child .half {
+    padding-top: 150px;
+}
+
 h2 {
     font-size: 3em;
     font-weight: 500;
