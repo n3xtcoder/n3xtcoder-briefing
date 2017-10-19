@@ -168,10 +168,6 @@ section.active {
     display: block;
 }
 
-section:first-child .half {
-    padding-top: 150px;
-}
-
 h2 {
     font-size: 3em;
     font-weight: 500;
@@ -216,7 +212,7 @@ p, cite {
 
 .half {
     z-index: 0;
-    padding: 80px 100px 20px 100px;
+    padding: 150px 100px 20px 100px;
     position: fixed;
     width: 50%;
     top: 0px;
