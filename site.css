@@ -314,6 +314,10 @@ dd {
 
 .blue {
     background-color: #0c3c64;
+    background-image: radial-gradient(#44446c 1px, transparent 1px),
+radial-gradient(#44446c 1px, transparent 1px);
+background-size:45px 30px,90px 60px;
+background-position: 0 0;
 }
 
 
