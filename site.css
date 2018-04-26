@@ -328,7 +328,6 @@ background-position: 0 0;
 }
 
 .location-logo {
-    height: 15%;
     padding: 20px;
 }
 
@@ -448,7 +447,7 @@ background-position: 0 0;
     }
     .location-logo {
         width: 100%;
-        max-width: 500px;
+        max-width: 300px;
         padding: 20px;
     }
     #progress {
