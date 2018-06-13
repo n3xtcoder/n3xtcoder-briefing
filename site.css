@@ -121,6 +121,8 @@ header .c-right {
 
 header .logo {
     width: 50px;
+    display: inline-block;
+    margin: 0;
 }
 
 #left, #right {
