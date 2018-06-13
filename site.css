@@ -63,9 +63,14 @@ button {
 }
 
 img {
-    max-width: 100%;
+    display: block;
+    max-width: 50%;
     height: auto;
     border: 0;
+}
+
+img:first-of-type{
+  margin-top: 40px;
 }
 
 .bg {
